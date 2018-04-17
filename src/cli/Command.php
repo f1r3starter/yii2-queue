@@ -10,7 +10,6 @@ namespace yii\queue\cli;
 use Symfony\Component\Process\Exception\RuntimeException as ProcessRuntimeException;
 use Symfony\Component\Process\Process;
 use yii\console\Controller;
-use yii\console\ExitCode;
 
 /**
  * Class Command
@@ -134,10 +133,10 @@ abstract class Command extends Controller
     public function actionExec($id, $ttr, $attempt, $pid)
     {
         if ($this->queue->execute($id, file_get_contents('php://stdin'), $ttr, $attempt, $pid)) {
-            return ExitCode::OK;
+            return self::EXIT_CODE_NORMAL;
         }
 
-        return ExitCode::UNSPECIFIED_ERROR;
+        return self::EXIT_CODE_ERROR;
     }
 
     /**
