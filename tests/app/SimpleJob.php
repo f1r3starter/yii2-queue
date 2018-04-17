@@ -8,7 +8,7 @@
 namespace tests\app;
 
 use Yii;
-use yii\base\BaseObject;
+use yii\base\Object;
 use yii\queue\JobInterface;
 
 /**
@@ -16,7 +16,7 @@ use yii\queue\JobInterface;
  *
  * @author Roman Zhuravlev <zhuravljov@gmail.com>
  */
-class SimpleJob extends BaseObject implements JobInterface
+class SimpleJob extends Object implements JobInterface
 {
     public $uid;
 

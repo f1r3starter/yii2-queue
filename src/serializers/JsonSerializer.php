@@ -8,7 +8,7 @@
 namespace yii\queue\serializers;
 
 use Yii;
-use yii\base\BaseObject;
+use yii\base\Object;
 use yii\base\InvalidConfigException;
 use yii\helpers\Json;
 
@@ -17,7 +17,7 @@ use yii\helpers\Json;
  *
  * @author Roman Zhuravlev <zhuravljov@gmail.com>
  */
-class JsonSerializer extends BaseObject implements SerializerInterface
+class JsonSerializer extends Object implements SerializerInterface
 {
     /**
      * @var string

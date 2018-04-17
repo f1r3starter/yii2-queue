@@ -7,7 +7,7 @@
 
 namespace yii\queue\serializers;
 
-use yii\base\BaseObject;
+use yii\base\Object;
 
 /**
  * Class IgbinarySerializer
@@ -17,7 +17,7 @@ use yii\base\BaseObject;
  *
  * @author xutl <xutongle@gmail.com>
  */
-class IgbinarySerializer extends BaseObject implements SerializerInterface
+class IgbinarySerializer extends Object implements SerializerInterface
 {
     /**
      * @inheritdoc

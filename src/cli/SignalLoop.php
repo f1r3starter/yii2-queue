@@ -7,7 +7,7 @@
 
 namespace yii\queue\cli;
 
-use yii\base\BaseObject;
+use yii\base\Object;
 use yii\console\ExitCode;
 
 /**
@@ -16,7 +16,7 @@ use yii\console\ExitCode;
  * @author Roman Zhuravlev <zhuravljov@gmail.com>
  * @since 2.0.2
  */
-class SignalLoop extends BaseObject implements LoopInterface
+class SignalLoop extends Object implements LoopInterface
 {
     /**
      * @var array of signals to exit from listening of the queue.

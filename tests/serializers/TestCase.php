@@ -8,7 +8,7 @@
 namespace tests\serializers;
 
 use tests\app\SimpleJob;
-use yii\base\BaseObject;
+use yii\base\Object;
 use yii\queue\serializers\SerializerInterface;
 
 /**
@@ -74,7 +74,7 @@ abstract class TestCase extends \tests\TestCase
     }
 }
 
-class TestObject extends BaseObject
+class TestObject extends Object
 {
     public $foo;
     public $bar;
